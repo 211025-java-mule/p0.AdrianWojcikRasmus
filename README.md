@@ -24,10 +24,10 @@ Suggested running via IDE
 
 
 <h3>Technologies:</h3>
-- Java 11\
-- Apatche Tomcat\
-- MySQL\
-- Google GSON\
+- Java 11
+- Apatche Tomcat
+- MySQL
+- Google GSON
 
 
 <h3>Author</h3>
