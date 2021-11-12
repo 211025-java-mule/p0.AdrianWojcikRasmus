@@ -5,9 +5,9 @@ Appliction connect to 3 weather API to collect weather data.
 
 <h3>API URL:</h3>
 
-https://openweathermap.org/
-https://www.weatherbit.io/
-https://weatherstack.com/
+https://openweathermap.org/ \
+https://www.weatherbit.io/ \
+https://weatherstack.com/ \
 
 
 
@@ -24,10 +24,10 @@ Suggested running via IDE
 
 
 <h3>Technologies:</h3>
-- Java 11
-- Apatche Tomcat
-- MySQL
-- Google GSON
+- Java 11 \
+- Apatche Tomcat \
+- MySQL \
+- Google GSON \
 
 
 <h3>Author</h3>
