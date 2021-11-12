@@ -11,7 +11,7 @@ https://weatherstack.com/
 
 
 
-<h3Features</h3>
+<h3>Features</h3>
 - Application shows information about Situation, Temperature, Humidity, Pressure, Wind Speed and Wind Diretion. 
 - Search by City Name 
 - Take avarages of data from 3 differents APIs and present data to user.
