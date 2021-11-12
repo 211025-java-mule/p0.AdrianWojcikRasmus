@@ -4,6 +4,8 @@ import backend.HttpCilents.OpenWeather.OpenWeatherClient;
 import backend.HttpCilents.WeatherBit.WeatherBitClient;
 import backend.HttpCilents.WeatherStack.WeatherStackClient;
 
+import java.util.ArrayList;
+
 
 public class CurrentWeatherService {
     private final OpenWeatherClient openWeatherClient;

@@ -2,6 +2,7 @@ package backend.Controllers;
 
 import lombok.Data;
 
+
 @Data
 public class CurrentWeather {
 
@@ -17,3 +18,5 @@ public class CurrentWeather {
     private float AVGWindDirection;
 
 }
+
+

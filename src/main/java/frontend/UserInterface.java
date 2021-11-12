@@ -3,13 +3,6 @@ package frontend;
 import backend.Controllers.*;
 import backend.HttpCilents.WeatherBit.WeatherBitDTO;
 import backend.HttpCilents.WeatherBit.WeatherBitForecastClient;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.LifecycleException;
-import org.apache.catalina.startup.Tomcat;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
 
 
 import java.text.DecimalFormat;
@@ -141,7 +134,7 @@ public class UserInterface {
             e.printStackTrace();
         }
         System.out.print(".\n\n");
-       ArrayList <WeatherBitDTO> forecast = weatherBitForecastClient.getWeatherBitForecastWeather(cityName);
+       ArrayList forecast = weatherBitForecastClient.getWeatherBitForecastWeather(cityName);
 
         String dateToday = weatherBitForecastClient.getDateToday();
         String dateTodayPlusOne = weatherBitForecastClient.getDateTodayPlusOne();
@@ -369,6 +362,7 @@ public class UserInterface {
         currentWeatherService.save();
         currentWeatherDAO.saveCurrentWeather();
 
+
         String description = currentWeatherService.currentWeatherDescription();
         float temperature = currentWeatherService.calculateAverageTemperature();
         float humidity = currentWeatherService.calculateAverageHumidity();
@@ -411,7 +405,5 @@ public class UserInterface {
         System.out.println(forecastMessage);
 
     }
-
-
 }
 

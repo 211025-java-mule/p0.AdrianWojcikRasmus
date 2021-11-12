@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
 import java.util.ArrayList;
 
 
@@ -184,9 +185,10 @@ public class WeatherBitForecastClient {
         WeatherBitDTO weatherBitDTO = gson.fromJson(responseBody, WeatherBitDTO.class);
 
         JsonParser jsonParser = new JsonParser();
-        JsonObject jo = (JsonObject)jsonParser.parse(responseBody);
+        JsonObject jo = (JsonObject) jsonParser.parse(responseBody);
         JsonArray jsonArray = jo.getAsJsonArray("data");
-        ArrayList forecast =gson.fromJson(jsonArray, ArrayList.class);
+        ArrayList forecast = gson.fromJson(jsonArray, ArrayList.class);
+        System.out.println(forecast.size());
 
 
         //Today
